@@ -4,7 +4,6 @@ import com.techproed.pages.FhcTripHotelCreatePage;
 import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -42,6 +41,7 @@ public class FhcTripHotelCreateTest extends TestBase {
         WebDriverWait wait = new WebDriverWait(driver,10);
         boolean message = wait.until(ExpectedConditions.textToBe(By.className("bootbox-body"),"Hotel was inserted successfully"));
         Assert.assertTrue(message);
+
 
 
     }
