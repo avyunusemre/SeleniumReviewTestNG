@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class GlbKitTest {
 
-    @Test
+    @Test (groups = "glbtest")
     public void test() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("glb_homeGarden"));

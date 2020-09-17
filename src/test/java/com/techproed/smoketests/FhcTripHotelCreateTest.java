@@ -36,7 +36,7 @@ public class FhcTripHotelCreateTest extends TestBase {
         Select select = new Select(createPage.idGroupDropDown);
         select.selectByIndex(1);
 
-        createPage.saveButton.click();
+        createPage.saveButton.submit();
 
         WebDriverWait wait = new WebDriverWait(driver,10);
         boolean message = wait.until(ExpectedConditions.textToBe(By.className("bootbox-body"),"Hotel was inserted successfully"));
